@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
+    <style>
+        form label, button {
+            display: block;
+            padding: 0.5em;
+        }
+    </style>
 </head>
 <body>
 <h1 style="color: green">This is the contact page</h1>
@@ -10,5 +16,25 @@
 <br>
 <br>
 <a href="index.html">Go to Home Page</a>
+
+<!-- modify this form HTML and place wherever you want your form -->
+<form id="form-using-formspree"
+        action="https://formspree.io/f/mqkrdobo"
+        method="POST"
+        style="background-color: lightblue; padding: 1em; margin-top: 2em"
+>
+    <label>
+        Your email:
+        <input type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea name="message"></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send</button>
+</form>
+
+https://script.google.com/macros/s/AKfycbyW7RR4yxd-SnK0hQ3AHoj6SgQiOnN6pORbD_vE_UAPMFA-ExCCM4SxtVpYKJTN-hx-/exec
 </body>
 </html>
